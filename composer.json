@@ -1,0 +1,28 @@
+{
+    "name": "osmphp/app",
+    "autoload": {
+        "psr-4": {
+            "Osm\\App\\": "src/",
+            "Osm\\App\\Tests\\": "tests/",
+            "Osm\\App\\Samples\\": "samples/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "osmphp/framework": "dev-master"
+    },
+    "extra": {
+        "osm": {
+            "component_pools": {
+                "src": {
+                    "module_path": "*/Module.php",
+                    "theme_path": "*/theme.php"
+                },
+                "samples": {
+                    "module_path": "*/Module.php",
+                    "testing": true
+                }
+            }
+        }
+    }
+}
