@@ -1,5 +1,13 @@
 {
     "name": "osmphp/app",
+    "description": "User/permission management and other common backend/frontend modules",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Vladislav Osmianskij",
+            "email": "vlaosm@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Osm\\App\\": "src/",
@@ -8,8 +16,10 @@
         }
     },
     "require": {
-        "php": "^7.2",
-        "osmphp/framework": "dev-master"
+        "php": ">=7.3",
+        "osmphp/framework2": "^0.1",
+        "osmphp/data": "^0.1",
+        "osmphp/bootstrap": "^0.1"
     },
     "extra": {
         "osm": {
